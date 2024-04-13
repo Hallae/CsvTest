@@ -11,7 +11,7 @@ namespace CsvTest.Models
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("OrganizationConnection");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-10A2V02;Database=OrganizationConsoledb;Trusted_Connection=True;");
         }
         public DbSet<Organization> Organization { get; set; }
 
