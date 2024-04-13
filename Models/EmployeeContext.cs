@@ -13,7 +13,9 @@ namespace CsvTest.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-10A2V02;Database=EmployeeConsoledb;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-10A2V02;Database=EmployeeConsoledb;Trusted_Connection=True;TrustServerCertificate=True;");
+               
         }
+
     }
 }
